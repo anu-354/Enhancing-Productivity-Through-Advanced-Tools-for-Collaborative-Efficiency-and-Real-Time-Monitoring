@@ -80,4 +80,44 @@ The platform is continuously evolving, with several upcoming features aimed at i
 
 ## Screenshots:
 
+Home page:
+
+![](Assets/HomeInterface.png)
+
+TeamLead Login:
+
+![](Assets/TeamLeadLogin.png)
+
+TeamLead Panel:
+
+![](Assets/TeamLeadPanel.png)
+
+Creating Task:
+
+![](Assets/CreatingTask.png)
+
+Task Assign Mail:
+
+![](Assets/TaskAssignMail.png)
+
+File Modules:
+
+![](Assets/FileModules.png)
+
+Employee Login:
+
+![](Assets/EmployeeLogin.png)
+
+Employee Panel:
+
+![](Assets/EmployeePanel.png)
+
+Instant Queries:
+
+![](Assets/Queries.png)
+
+
+
+
+
 
