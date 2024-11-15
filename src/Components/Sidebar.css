@@ -1,0 +1,103 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 280px;
+    background-color: #2c3e50; /* Darker, modern background */
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns logout at the bottom */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure it's always above main content */
+}
+
+/* Sidebar header */
+.sidebar-header {
+    color: #ecf0f1; /* Softer white */
+    text-align: center;
+    font-size: 1.8rem; /* Larger font for better emphasis */
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Sidebar navigation */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Creates consistent spacing between links */
+}
+
+/* Sidebar navigation links */
+.sidebar-nav a {
+    color: #ecf0f1; /* Light color for better readability */
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #34495e; /* Slightly lighter than the sidebar background */
+    border-radius: 6px; /* Smoother edges for a modern look */
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center; /* Vertical alignment of text */
+    transition: all 0.3s ease; /* Smooth transitions on hover */
+}
+
+.sidebar-nav a:hover {
+    background-color: #1abc9c; /* Use an accent color for hover effects */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a lift effect */
+    transform: translateX(5px); /* Slight movement for interactivity */
+}
+
+/* Logout button */
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: auto; /* Sticks the logout button at the bottom */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Darker red for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds lift effect */
+}
+
+/* Main content styling */
+.main-content {
+    margin-left: 280px; /* Matches the sidebar width */
+    padding: 30px;
+    background-color: #f8f9fa; /* Light background for contrast */
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Content header */
+.main-content h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Content description */
+.main-content p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}

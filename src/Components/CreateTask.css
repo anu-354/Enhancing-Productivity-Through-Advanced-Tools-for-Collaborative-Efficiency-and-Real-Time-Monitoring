@@ -1,0 +1,48 @@
+/* src/components/CreateTask.css */
+
+.create-task-container {
+    
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.create-task-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-task-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.create-task-container input,
+.create-task-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.create-task-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.create-task-container button:hover {
+    background-color: #2aab85;
+}

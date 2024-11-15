@@ -1,0 +1,107 @@
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff; /* Updated background color */
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    color: #f1f1f1; /* Light text for contrast */
+}
+
+.main-content h1 {
+    color: #000000; /* White color for better visibility */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    color: #000000; /* Softer light gray for text */
+    margin-bottom: 20px;
+}
+
+.btn.search-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn.search-btn:hover {
+    background-color: #0056b3;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.module-input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.module-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.alert.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.files-list {
+    margin-top: 30px;
+}
+
+.file-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.file-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+.file-list strong{
+    color: #000000;
+}
+.file-item:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.file-link:hover {
+    text-decoration: underline;
+}

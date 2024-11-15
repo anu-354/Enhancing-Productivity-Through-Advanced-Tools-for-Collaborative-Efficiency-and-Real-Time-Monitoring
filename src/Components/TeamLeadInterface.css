@@ -1,0 +1,275 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Team Lead Interface container */
+.team-lead-interface {
+    display: flex;
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 280px;
+    background-color: #2c3e50;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+/* Sidebar header */
+.sidebar-header {
+    color: #ecf0f1;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Sidebar navigation */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Sidebar links */
+.sidebar-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #34495e;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+/* Logout button */
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: auto;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content wrapper for tasks */
+.content-wrapper {
+    margin-left: 280px;
+    padding: 30px;
+    width: calc(100% - 280px);
+    background-color: #2a2e35;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Refresh button */
+.refresh-btn {
+    float: right;
+    margin-bottom: 20px;
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.refresh-btn:hover {
+    background-color: #e5533c;
+}
+
+/* Module heading */
+.module-heading {
+    color: #eaeaea;
+    border-bottom: 3px solid #ff6347;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Task List Container */
+.todo-list {
+    background-color: #2a2e35;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* Individual task item styling */
+.task-item {
+    background-color: #3a3e45;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #454952;
+    transform: scale(1.02);
+}
+
+/* Task card for layout */
+.task-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Task progress bar at the top */
+.task-progress {
+    margin-bottom: 20px;
+    color: white;
+}
+.task-progress p{
+    color: white;
+}
+
+/* Task details area */
+.task-details {
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+/* Task name styling */
+.task-name {
+    color: #ffdf5d;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Module ID styling */
+.task-module-id {
+    color: #f2f0ee;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Date information */
+.task-date {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    margin-bottom: 5px;
+}
+.task-date strong{
+    color: white;
+
+}
+
+/* Claim button */
+.claim-btn {
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.claim-btn:hover {
+    background-color: #e5533c;
+    transform: translateY(-2px);
+}
+
+/* Button container */
+.task-card .p-2.m-2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 10px;
+    margin-top: auto;
+}
+
+/* Delete button */
+.task-card .p-2.m-2 button:nth-child(1) {
+    margin-right: 0;
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-card .p-2.m-2 button:nth-child(1):hover {
+    background-color: #c0392b;
+}
+
+/* Files button */
+.task-card .p-2.m-2 button:nth-child(2) {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-card .p-2.m-2 button:nth-child(2):hover {
+    background-color: #2980b9;
+}
+
+/* No tasks message */
+.no-tasks {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    padding: 20px;
+    margin-top: 40px;
+    font-style: italic;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
